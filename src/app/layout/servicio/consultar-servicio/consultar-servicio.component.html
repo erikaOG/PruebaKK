@@ -1,0 +1,46 @@
+<div [@routerTransition]>
+  <app-page-header [heading]="'Consultar servicio'" [icon]="'fa-edit'"></app-page-header>
+  <div class="row">
+    <div class="col col-xl-12 col-lg-12">
+
+
+      <div class="card mb-3">
+        <div class="card-header">Servicios</div>
+        <div class="card-body table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+        
+                <th>Código</th>
+                <th>Servicio</th>
+                <th>Tiempo estandar</th>
+                <th>Categoría</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let servicio of servicios | async">
+            
+                <td>{{servicio.data.codigo | uppercase}}</td>
+                <td>
+                  <a href="">{{servicio.data.descripcion | uppercase}}</a>
+                </td>
+                <td>{{servicio.data.tiempoEstandar}} minutos</td>
+                <td></td>
+
+              </tr>
+
+
+
+            </tbody>
+          </table>
+
+        
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

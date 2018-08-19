@@ -1,0 +1,98 @@
+<!--<div class="login-page" [@routerTransition]>
+    <div class="row justify-content-md-center">
+        <div class="col-md-4">
+            <img src="assets/images/logo.png" width="150px" class="user-avatar" />
+            <h1>SB Admin BS4 Angular5</h1>
+            <h2>{{ (item | async)?.nombre }}</h2>
+         
+   
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="usuario.email" class="form-control input-underline input-lg" id="1" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" [(ngModel)]="usuario.password" class="form-control input-underline input-lg" id="2" placeholder="Password">
+                    </div>
+                </div>
+                <a class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLoggedin()"> Log in </a>
+                &nbsp;
+                <a class="btn rounded-btn" [routerLink]="['/signup']">Register</a>
+   
+        </div>
+    </div>
+</div>-->
+
+<!--<div class="login-page" [@routerTransition]>
+    <div class="row justify-content-md-center">
+        <div class="col-md-4">
+            <img src="assets/images/logo.png" width="150px" class="user-avatar" />
+            <h1>SB Admin BS4 Angular5</h1>
+            <h2>{{ (item | async)?.nombre }}</h2>
+         
+   
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="usuario.email" class="form-control input-underline input-lg" id="1" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" [(ngModel)]="usuario.password" class="form-control input-underline input-lg" id="2" placeholder="Password">
+                    </div>
+                </div>
+                <a class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLoggedin()"> Log in </a>
+                &nbsp;
+                <a class="btn rounded-btn" [routerLink]="['/signup']">Register</a>
+   
+        </div>
+    </div>
+</div>
+-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8 d-none d-lg-block">
+            <div class="card">
+                <img src="assets/images/system-machine.jpg" style="width:990px;height:690px;">
+            </div>
+        </div>
+        <div class="col-sm-4">
+
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-body mt-2">
+                        <div class="row float-center">
+                            <div class="container">
+                                <div class="imgcontainer d-flex justify-content-center">
+                                    <img src="assets/images/logo.png" style="width:90px;height:80px;" alt="Avatar" class="avatar">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Correo</label>
+                                    <input type="email" [(ngModel)]="usuario.email" class="form-control input-underline input-lg" id="id1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Contraseña</label>
+                                    <input type="password" [(ngModel)]="usuario.password" class="form-control input-underline input-lg" id="id2" placeholder="Password">
+                                </div>
+                                <div class="form-group form-check">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Seleccione la empresa</label>
+                                    <select type="password" class="form-control" placeholder="--Empresa--">:</select>
+                                </div>
+                                <div class="form-group d-flex justify-content-center float-center">
+                                    <div class="card">
+                                        <button type="submit" class="btn btn-primary" [routerLink]="['/dashboard']" (click)="onLoggedin()">Ingresar</button>
+                                    </div>
+                                    <div class="card">
+                                        <button type="submit" class="btn btn-primary" [routerLink]="['/signup']">Registrarse</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
