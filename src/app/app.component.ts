@@ -13,11 +13,6 @@ export class AppComponent implements OnInit {
 
     constructor(db: AngularFirestore) {
 
-
-        
-       
-
-
     }
 
 
